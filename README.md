@@ -12,3 +12,5 @@ Since this project is a result of a class assignment, it has been graded and acc
 We have finalized the concept selection and are currently expanding further iterations on our concept prototype. This report aims to describe our chosen concept, our reasoning behind it, and a table of the alternate solutions considered. In addition, this report also includes a preliminary analysis, a weighted design matrix, an updated Gantt chart, a design hazard matrix, and our references. We hope to get feedback on our reasoning for the sensor choice and on the housing system.   
 
 For our system, we decided to use a Raspberry Pi with a camera to obtain absolute orientation and positional data. The basic layout is depicted in Figure 1 below. 
+
+[View Full Report](documnetation/Critical Design Review RomiGPS Version 2A DRAFT.pdf)
