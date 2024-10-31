@@ -13,4 +13,4 @@ We have finalized the concept selection and are currently expanding further iter
 
 For our system, we decided to use a Raspberry Pi with a camera to obtain absolute orientation and positional data. The basic layout is depicted in Figure 1 below. 
 
-[View Full Report](documnetation/Critical Design Review RomiGPS Version 2A DRAFT.pdf)
+[View Full Report](docs/report.pdf)
