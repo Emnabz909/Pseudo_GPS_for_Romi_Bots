@@ -1,0 +1,98 @@
+\doxysection{Aruco\+\_\+\+Marker\+\_\+\+Maker Namespace Reference}
+\hypertarget{namespace_aruco___marker___maker}{}\label{namespace_aruco___marker___maker}\index{Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_aruco___marker___maker_1_1_aruco_markers}{Aruco\+Markers}}
+\item 
+class \mbox{\hyperlink{class_aruco___marker___maker_1_1_aruco_type}{Aruco\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_aruco___marker___maker_af52dfe58297e2bb238e2e77b3e4aed05}{generate\+\_\+markers}} (aruco\+\_\+type, \mbox{\hyperlink{namespace_aruco___marker___maker_a3d395a028ec632d00dcbec84b5288500}{marker\+\_\+count}}, \mbox{\hyperlink{namespace_aruco___marker___maker_a72400a792252e7ce0bdc3a15fa77cdc1}{marker\+\_\+width\+\_\+pixels}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_aruco___marker___maker_afbb3b3f8d2b0a5a0f67ecc7bc5bd839d}{DICT\+\_\+6\+X6\+\_\+250}}
+\item 
+\mbox{\hyperlink{namespace_aruco___marker___maker_a3d395a028ec632d00dcbec84b5288500}{marker\+\_\+count}}
+\item 
+\mbox{\hyperlink{namespace_aruco___marker___maker_a72400a792252e7ce0bdc3a15fa77cdc1}{marker\+\_\+width\+\_\+pixels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Senior Design Project: ArUco Marker Generation
+=================================================
+
+Authors: 
+- Conor Schott
+- Gabriel Coria
+- Emmanuel Baez
+- Owen Guinane
+
+Aruco Marker Generation
+=======================
+This script generates ArUco markers of a specified dictionary type and ID, labels each marker with its unique ID, 
+and saves them as image files in the current directory. The ArUco markers are commonly used for computer vision 
+applications such as pose estimation, object tracking, and calibration tasks in robotics and other fields.
+
+Key Features:
+-------------
+1. Generate ArUco markers of a specified dictionary type (currently supports DICT_6X6_250).
+2. Customizable marker size in pixels, with an adjustable border width for visibility.
+3. Labels each marker with its unique ID and saves them as PNG files.
+4. Easy to scale for generating multiple markers in a batch.
+
+Dependencies:
+-------------
+- Python 3.x
+- OpenCV (for ArUco marker generation and image processing)
+- NumPy (for matrix handling and image manipulation)
+- OS (for file and directory handling)
+
+Notes:
+------
+- The generated markers will be saved in the same directory where the script is executed.
+- Currently, only the DICT_6X6_250 ArUco dictionary is supported, but it can be extended to other dictionaries.
+- The script can be customized to generate any number of markers by adjusting the `marker_count` parameter.
+- The marker size can be set by changing the `marker_width_pixels` parameter.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_aruco___marker___maker_af52dfe58297e2bb238e2e77b3e4aed05}\index{Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}!generate\_markers@{generate\_markers}}
+\index{generate\_markers@{generate\_markers}!Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}}
+\doxysubsubsection{\texorpdfstring{generate\_markers()}{generate\_markers()}}
+{\footnotesize\ttfamily \label{namespace_aruco___marker___maker_af52dfe58297e2bb238e2e77b3e4aed05} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+generate\+\_\+markers (\begin{DoxyParamCaption}\item[{}]{aruco\+\_\+type}{, }\item[{}]{marker\+\_\+count}{, }\item[{}]{marker\+\_\+width\+\_\+pixels}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates and saves multiple ArUco markers.
+
+Args:
+    aruco_type (ArucoType): The ArUco dictionary type to use (e.g., DICT_6X6_250).
+    marker_count (int): The number of markers to generate.
+    marker_width_pixels (int): The size of each marker in pixels (excluding borders).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_aruco___marker___maker_afbb3b3f8d2b0a5a0f67ecc7bc5bd839d}\index{Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}!DICT\_6X6\_250@{DICT\_6X6\_250}}
+\index{DICT\_6X6\_250@{DICT\_6X6\_250}!Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}}
+\doxysubsubsection{\texorpdfstring{DICT\_6X6\_250}{DICT\_6X6\_250}}
+{\footnotesize\ttfamily \label{namespace_aruco___marker___maker_afbb3b3f8d2b0a5a0f67ecc7bc5bd839d} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+DICT\+\_\+6\+X6\+\_\+250}
+
+\Hypertarget{namespace_aruco___marker___maker_a3d395a028ec632d00dcbec84b5288500}\index{Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}!marker\_count@{marker\_count}}
+\index{marker\_count@{marker\_count}!Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}}
+\doxysubsubsection{\texorpdfstring{marker\_count}{marker\_count}}
+{\footnotesize\ttfamily \label{namespace_aruco___marker___maker_a3d395a028ec632d00dcbec84b5288500} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+marker\+\_\+count}
+
+\Hypertarget{namespace_aruco___marker___maker_a72400a792252e7ce0bdc3a15fa77cdc1}\index{Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}!marker\_width\_pixels@{marker\_width\_pixels}}
+\index{marker\_width\_pixels@{marker\_width\_pixels}!Aruco\_Marker\_Maker@{Aruco\_Marker\_Maker}}
+\doxysubsubsection{\texorpdfstring{marker\_width\_pixels}{marker\_width\_pixels}}
+{\footnotesize\ttfamily \label{namespace_aruco___marker___maker_a72400a792252e7ce0bdc3a15fa77cdc1} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+marker\+\_\+width\+\_\+pixels}
+

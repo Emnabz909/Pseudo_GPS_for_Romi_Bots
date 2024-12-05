@@ -1,0 +1,66 @@
+\doxysection{Aruco\+\_\+\+Marker\+\_\+\+Maker.\+Aruco\+Markers Class Reference}
+\hypertarget{class_aruco___marker___maker_1_1_aruco_markers}{}\label{class_aruco___marker___maker_1_1_aruco_markers}\index{Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aruco___marker___maker_1_1_aruco_markers_a6f9e89ac52386637786a99723485852a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class_aruco___marker___maker_1_1_aruco_markers_aef40a022276596a75f84155723dacaeb}{generate\+\_\+aruco\+\_\+marker}} (self, aruco\+\_\+type, marker\+\_\+id, \mbox{\hyperlink{namespace_aruco___marker___maker_a72400a792252e7ce0bdc3a15fa77cdc1}{marker\+\_\+width\+\_\+pixels}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aruco___marker___maker_1_1_aruco_markers_ad0198088e50704fc82aa230ccaf23de8}{dir}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for generating and saving ArUco markers.
+
+This class handles the generation of ArUco markers, adds borders, labels them with their unique IDs, 
+and saves the markers as image files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_aruco___marker___maker_1_1_aruco_markers_a6f9e89ac52386637786a99723485852a}\index{Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_aruco___marker___maker_1_1_aruco_markers_a6f9e89ac52386637786a99723485852a} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+Aruco\+Markers.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor for the ArucoMarkers class.
+
+Initializes the object by determining the directory where the script is located.
+This will be used to save the generated marker images.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aruco___marker___maker_1_1_aruco_markers_aef40a022276596a75f84155723dacaeb}\index{Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}!generate\_aruco\_marker@{generate\_aruco\_marker}}
+\index{generate\_aruco\_marker@{generate\_aruco\_marker}!Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{generate\_aruco\_marker()}{generate\_aruco\_marker()}}
+{\footnotesize\ttfamily \label{class_aruco___marker___maker_1_1_aruco_markers_aef40a022276596a75f84155723dacaeb} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+Aruco\+Markers.\+generate\+\_\+aruco\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{aruco\+\_\+type}{, }\item[{}]{marker\+\_\+id}{, }\item[{}]{marker\+\_\+width\+\_\+pixels}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates a single ArUco marker, adds a border and label, and saves it as a PNG image.
+
+Args:
+    aruco_type (ArucoType): The ArUco dictionary type to use (e.g., DICT_6X6_250).
+    marker_id (int): The unique ID of the marker to generate.
+    marker_width_pixels (int): The size of the marker in pixels (excluding borders).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_aruco___marker___maker_1_1_aruco_markers_ad0198088e50704fc82aa230ccaf23de8}\index{Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}!dir@{dir}}
+\index{dir@{dir}!Aruco\_Marker\_Maker.ArucoMarkers@{Aruco\_Marker\_Maker.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily \label{class_aruco___marker___maker_1_1_aruco_markers_ad0198088e50704fc82aa230ccaf23de8} 
+Aruco\+\_\+\+Marker\+\_\+\+Maker.\+Aruco\+Markers.\+dir}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_aruco___marker___maker_8py}{Aruco\+\_\+\+Marker\+\_\+\+Maker.\+py}}\end{DoxyCompactItemize}
