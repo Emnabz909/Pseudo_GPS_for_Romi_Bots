@@ -1,0 +1,116 @@
+\doxysection{Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers Class Reference}
+\hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers}{}\label{class_pose___estimation___aruco___markers_1_1_aruco_markers}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a79675d5697f86816a2aaf026246033fe}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a5ac67646bb6c14db6947c09e92ab6db8}{marker\+\_\+width\+\_\+pixels}}=100)
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a1fd2d2e2edc4d7488e7b0aa7d2c31b3e}{generate\+\_\+aruco\+\_\+marker}} (self, aruco\+\_\+type, marker\+\_\+id, \mbox{\hyperlink{namespace_pose___estimation___aruco___markers_a631100c241995a577f634b2259e4a992}{show\+\_\+image}}=False)
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_ac41debfaee857597a9c2c2e626825fea}{aruco\+\_\+marker\+\_\+pose\+\_\+estimation}} (self, aruco\+\_\+type, \mbox{\hyperlink{namespace_pose___estimation___aruco___markers_add379cc6cf348e1141c5edcbba2a4402}{camera\+\_\+matrix}}, \mbox{\hyperlink{namespace_pose___estimation___aruco___markers_adb58a1afe5b159a0e396060df7932fab}{dist\+\_\+coeffs}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a3bc4cc5d39afc17368662fad1c469a76}{dir}}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_aac5afd6343b9d64137aac412267cde47}{pi\+Cam}}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a5ac67646bb6c14db6947c09e92ab6db8}{marker\+\_\+width\+\_\+pixels}}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a48befb2c10f02270a36b6f64f4c6c515}{origin\+\_\+position}}
+\item 
+\mbox{\hyperlink{class_pose___estimation___aruco___markers_1_1_aruco_markers_a50e166766a2798dcb7c77f4739eaf723}{smoothed\+\_\+positions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@class ArucoMarkers
+@brief Class to manage ArUco marker operations, including generation, detection, and pose estimation.
+
+@param marker_width_pixels The width of the marker in pixels. Default is 100 pixels.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a79675d5697f86816a2aaf026246033fe}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a79675d5697f86816a2aaf026246033fe} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{marker\+\_\+width\+\_\+pixels}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Initializes the ArUcoMarkers object and configures the Raspberry Pi camera.
+
+@param marker_width_pixels The width of the marker in pixels. Default is 100 pixels.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_ac41debfaee857597a9c2c2e626825fea}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!aruco\_marker\_pose\_estimation@{aruco\_marker\_pose\_estimation}}
+\index{aruco\_marker\_pose\_estimation@{aruco\_marker\_pose\_estimation}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{aruco\_marker\_pose\_estimation()}{aruco\_marker\_pose\_estimation()}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_ac41debfaee857597a9c2c2e626825fea} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+aruco\+\_\+marker\+\_\+pose\+\_\+estimation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{aruco\+\_\+type}{, }\item[{}]{camera\+\_\+matrix}{, }\item[{}]{dist\+\_\+coeffs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Detects ArUco markers in a live video stream, estimates their pose, and computes
+       their position relative to a dynamic origin (Marker ID 1).
+
+@param aruco_type The type of ArUco marker (from the ArucoType enum).
+@param camera_matrix The camera matrix for intrinsic parameters.
+@param dist_coeffs The distortion coefficients for the camera.
+
+@note This function runs indefinitely, detecting and estimating the pose of ArUco markers 
+      in real-time. Press `+` to increase the calibration factor, `-` to decrease, and `q` to quit.
+\end{DoxyVerb}
+ \Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a1fd2d2e2edc4d7488e7b0aa7d2c31b3e}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!generate\_aruco\_marker@{generate\_aruco\_marker}}
+\index{generate\_aruco\_marker@{generate\_aruco\_marker}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{generate\_aruco\_marker()}{generate\_aruco\_marker()}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a1fd2d2e2edc4d7488e7b0aa7d2c31b3e} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+generate\+\_\+aruco\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{aruco\+\_\+type}{, }\item[{}]{marker\+\_\+id}{, }\item[{}]{show\+\_\+image}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Generates and saves an ArUco marker as an image file.
+
+@param aruco_type The type of ArUco marker (from the ArucoType enum).
+@param marker_id The ID of the marker to generate.
+@param show_image Boolean flag to display the generated marker. Default is False.
+
+@note The marker is saved as `aruco_marker.png` in the current working directory.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a3bc4cc5d39afc17368662fad1c469a76}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!dir@{dir}}
+\index{dir@{dir}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a3bc4cc5d39afc17368662fad1c469a76} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+dir}
+
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a5ac67646bb6c14db6947c09e92ab6db8}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!marker\_width\_pixels@{marker\_width\_pixels}}
+\index{marker\_width\_pixels@{marker\_width\_pixels}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{marker\_width\_pixels}{marker\_width\_pixels}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a5ac67646bb6c14db6947c09e92ab6db8} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+marker\+\_\+width\+\_\+pixels}
+
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a48befb2c10f02270a36b6f64f4c6c515}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!origin\_position@{origin\_position}}
+\index{origin\_position@{origin\_position}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{origin\_position}{origin\_position}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a48befb2c10f02270a36b6f64f4c6c515} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+origin\+\_\+position}
+
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_aac5afd6343b9d64137aac412267cde47}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!piCam@{piCam}}
+\index{piCam@{piCam}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{piCam}{piCam}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_aac5afd6343b9d64137aac412267cde47} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+pi\+Cam}
+
+\Hypertarget{class_pose___estimation___aruco___markers_1_1_aruco_markers_a50e166766a2798dcb7c77f4739eaf723}\index{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}!smoothed\_positions@{smoothed\_positions}}
+\index{smoothed\_positions@{smoothed\_positions}!Pose\_Estimation\_Aruco\_Markers.ArucoMarkers@{Pose\_Estimation\_Aruco\_Markers.ArucoMarkers}}
+\doxysubsubsection{\texorpdfstring{smoothed\_positions}{smoothed\_positions}}
+{\footnotesize\ttfamily \label{class_pose___estimation___aruco___markers_1_1_aruco_markers_a50e166766a2798dcb7c77f4739eaf723} 
+Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+Aruco\+Markers.\+smoothed\+\_\+positions}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pose___estimation___aruco___markers_8py}{Pose\+\_\+\+Estimation\+\_\+\+Aruco\+\_\+\+Markers.\+py}}\end{DoxyCompactItemize}
