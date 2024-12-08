@@ -1,4 +1,4 @@
-# Pseudo_GPS_for_Romi_Bots
+# Pseudo GPS for Romi Bots
 Senior Project for Charlie Refvem by Emmanuel Baez, Gabriel Coria, Owen Guinane and Conor Schott
 
 ## Table of Contents
